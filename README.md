@@ -1,6 +1,19 @@
 # IONIC PROJECT CREATION
-
+## NEEDED SOFT
+### ANDROID STUDIO
+[AndroidStudio](https://developer.android.com/studio)
+### ANDROID STUDIO
+[Xcode](https://developer.apple.com/xcode/)
+### NODEJS
+[NVM](curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash)
 ## SET zshrc profile
+```
+vi ~/.zshrc
+```
+```
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
 ### vi ~/.zshrc
 ```
 export ANDROID_HOME="/Users/`user`/Library/Android/sdk"
