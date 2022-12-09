@@ -2,8 +2,12 @@
 ## NEEDED SOFT
 ### ANDROID STUDIO
 [AndroidStudio](https://developer.android.com/studio)
+#### INSTALL ADB
+#### INSTALL EMULATOR
+#### INSTALL ANDROID STUDIO ADD-ONS AND PLUGINS
 ### XCODE
 [Xcode](https://developer.apple.com/xcode/)
+#### INSTALL EMULATORS
 ## SET zshrc profile
 ### 1. OPEN TERMINAL
 ### 2. INSTALL NODEJS USING NVM
