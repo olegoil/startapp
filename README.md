@@ -78,8 +78,8 @@ if (userAgent) {
 ### 2. Change in Filetransfer.java:
 ```
 import org.apache.cordova.Whitelist;
-``` 
-=> 
+```
+#### Replace the above with the code below
 ```
 import org.apache.cordova.AllowList;
 ```
@@ -156,18 +156,26 @@ export const environment = {
 ```
 
 ## MODIFY tsconfig.json
+```
 "target": "es2015",
 "module": "es2020",
 "lib": [
     "es2018", 
     "dom"
 ],
+```
 
 ## GENERATE KEY FOR ANDROID
+```
 keytool -genkey -v -keystore my-release-key.keystore -alias `com.olegtronics.startapp` -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Oleg Konowalow, OU=LLC, O=Echo, L=Minsk, ST=Minsk, C=BY" -storepass Toshiba2! -keypass Toshiba2!
+```
 ## BUILD DEBUG
+```
 ionic cordova build ios --prod --optimizejs --minifycss --minifyjs --verbose
 ionic cordova build android --prod --optimizejs --minifycss --minifyjs --verbose
+```
 ## BUILD RELEASE
+```
 ionic cordova build ios --prod --release --optimizejs --minifycss --minifyjs --verbose
 ionic cordova build android --prod --release --optimizejs --minifycss --minifyjs --verbose
+```
