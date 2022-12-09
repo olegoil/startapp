@@ -4,24 +4,29 @@
 [AndroidStudio](https://developer.android.com/studio)
 ### ANDROID STUDIO
 [Xcode](https://developer.apple.com/xcode/)
-### NODEJS
+### NODEJS USING NVM
 [NVM](curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash)
 ## SET zshrc profile
+### 1. OPEN TERMINAL
+### 2. OPEN ENVIRONMENT SETTTINGS
 ```
 vi ~/.zshrc
 ```
+### 3. INSERT CODE BELOW AND SAVE
 ```
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-```
-### vi ~/.zshrc
-```
 export ANDROID_HOME="/Users/`user`/Library/Android/sdk"
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+```
+### 4. RESTART TERMINAL
+### 5. INSTALL DIFFERENT NODEJS VERSIONS USING THE CODE BELOW
+```
+nvm install 12 && nvm install 14 && nvm install 16 && nvm install 18 && nvm use 16
 ```
 
 ## IONIC INSTALLATION
