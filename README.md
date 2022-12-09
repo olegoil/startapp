@@ -136,7 +136,7 @@ src/
 └── app/
    └── app.module.ts
 ```
-### 2. IN EACH MODULE (F.E. TABS)
+### 2. SET TRANSLATION FILES
 ```
 src/
 └── assets/
@@ -144,7 +144,7 @@ src/
         ├── ru.json
         └── en.json
 ```
-### 3. SET TRANSLATION FILES
+### 3. IN EACH MODULE (F.E. TABS)
 ```
 src/
 └── app/
