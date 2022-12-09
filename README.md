@@ -131,11 +131,27 @@ if (shouldAllowRequest == null) {
 
 ## TRANSLATION ngx-translate need changes in
 ### 1. MAIN
-------- app.module.ts:
+```
+src/
+└── app/
+   └── app.module.ts
+```
 ### 2. IN EACH MODULE (F.E. TABS)
-------- tab1.page.ts:
-------- tabs1.module.ts:
+```
+src/
+└── assets/
+    └── i18n/
+        ├── ru.json
+        └── en.json
+```
 ### 3. SET TRANSLATION FILES
+```
+src/
+└── app/
+    └── tab1/
+        ├── tab1.page.ts
+        └── tabs1.module.ts
+```
 ------- assets/i18n/de.json (en.json, ru.json, etc.)
 ### 4. ADD ADDITIONAL FILES IN ROOT
 ```
@@ -172,10 +188,16 @@ keytool -genkey -v -keystore my-release-key.keystore -alias `com.olegtronics.sta
 ## BUILD DEBUG
 ```
 ionic cordova build ios --prod --optimizejs --minifycss --minifyjs --verbose
+```
+#### OR
+```
 ionic cordova build android --prod --optimizejs --minifycss --minifyjs --verbose
 ```
 ## BUILD RELEASE
 ```
 ionic cordova build ios --prod --release --optimizejs --minifycss --minifyjs --verbose
+```
+#### OR
+```
 ionic cordova build android --prod --release --optimizejs --minifycss --minifyjs --verbose
 ```
