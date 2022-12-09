@@ -4,15 +4,17 @@
 [AndroidStudio](https://developer.android.com/studio)
 ### ANDROID STUDIO
 [Xcode](https://developer.apple.com/xcode/)
-### NODEJS USING NVM
-[NVM](curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash)
 ## SET zshrc profile
 ### 1. OPEN TERMINAL
-### 2. OPEN ENVIRONMENT SETTTINGS
+### 2. NODEJS USING NVM
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+```
+### 3. OPEN ENVIRONMENT SETTTINGS
 ```
 vi ~/.zshrc
 ```
-### 3. INSERT CODE BELOW AND SAVE
+### 4. INSERT CODE BELOW AND SAVE
 ```
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -23,8 +25,8 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
 export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 ```
-### 4. RESTART TERMINAL
-### 5. INSTALL DIFFERENT NODEJS VERSIONS USING THE CODE BELOW
+### 5. RESTART TERMINAL
+### 6. INSTALL DIFFERENT NODEJS VERSIONS USING THE CODE BELOW
 ```
 nvm install 12 && nvm install 14 && nvm install 16 && nvm install 18 && nvm use 16
 ```
