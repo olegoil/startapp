@@ -2,7 +2,7 @@
 ## NEEDED SOFT
 ### ANDROID STUDIO
 [AndroidStudio](https://developer.android.com/studio)
-### ANDROID STUDIO
+### XCODE
 [Xcode](https://developer.apple.com/xcode/)
 ## SET zshrc profile
 ### 1. OPEN TERMINAL
