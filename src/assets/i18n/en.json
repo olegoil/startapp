@@ -1,0 +1,306 @@
+{
+	"appname": "Echo",
+	"pages": {
+		"introvalue": "Intro {{value}}",
+		"intro": "Intro",
+		"login": "Login",
+		"home": "Main",
+		"message": "Chat",
+		"messages": "Chats",
+		"interesting_messages": "Interesting Chats",
+		"settings": "Settings",
+		"payments": "More interesting messages"
+	},
+	"intro": {
+		"slide1": {
+			"title": "Echo",
+			"subtitle": "Dating over Echo!",
+			"description": "The best way to get know someone is the verbal-way. The voice is much more important than the visual!"
+		},
+		"slide2": {
+			"title": "Echo",
+			"subtitle": "Something Awesome!",
+			"list": {
+				"0": "Tap the record button",
+				"1": "Say something like: \"Hello my name is...\"",
+				"2": "Message will be sent to random user with opposite gender",
+				"3": "Receive a message from a random with opposite gender",
+				"4": "Start voicing and meet!"
+			}
+		},
+		"slide3": {
+			"title": "Echo",
+			"subtitle": "Data required from you:",
+			"list": {
+				"0": "Your Gender",
+				"1": "Your Age",
+				"2": "Preferred language and place"
+			}
+		},
+		"slide4": {
+			"title": "Your gender",
+			"subtitle": "Select your gender",
+			"description": "To find the right partner with opposite gender."
+		},
+		"slide5": {
+			"title": "Your birthday",
+			"subtitle": "Enter your birthday",
+			"description": "To find best partner for conversation (nor to young either to old)."
+		},
+		"slide6": {
+			"title": "Your language and place",
+			"subtitle": "Select your language and place",
+			"description": "To find partner with the same language and nearest to you."
+		},
+		"slide7": {
+			"title": "Login",
+			"subtitle": "Are you already registered?",
+			"description": "If you are already registered enter your phonenumber/email and password for login. Or write us an email: support@echochatting.me"
+		}
+	},
+	"alerts": {
+		"loginerror": {
+			"title": {
+				"syncherror": "Synchranization Error",
+				"createerror": "Table create Error",
+				"codeerror": "Errorcode 5",
+				"dberror": "Database create Error"
+			},
+			"msg": {
+				"syncherror": "Data could not be synchronized",
+				"createerror": "Tables could not be created",
+				"codeerror": "Unknown Error",
+				"dberror": "Error in creation Database"
+			}
+		},
+		"like": {
+			"title": {
+				"interesting": "Add to interesting users",
+				"notinteresting": "Remove from interesting users"
+			},
+			"msg": {
+				"interesting": "Do you want to add this user to your list of interesting people?",
+				"notinteresting": "Do you want to remove this user from your list of interesting people"
+			},
+			"handling": {
+				"interesting": "Add",
+				"notinteresting": "Remove"
+			}
+		},
+		"block": {
+			"title": {
+				"block": "Block user?",
+				"unblock": "Unblock user?"
+			},
+			"msg": {
+				"block": "You don't want to get any messages from this user anymore?",
+				"unblock": "You want to get messages from this user again?"
+			},
+			"handling": {
+				"block": "Block this user",
+				"unblock": "Unblock this user"
+			}
+		},
+		"nickname": {
+			"title": "This nikname will be visible only to you and serves for you to distinguish users.",
+			"msg": "You want give this user a nikname?",
+			"handling": "Set name",
+			"placeholder": "F.e.: My favorite"
+		},
+		"incoming": {
+			"title": "Incoming random message!",
+			"msg": "Do you like this message?",
+			"add": "Add to interesting"
+		},
+		"exitapp": {
+			"title": "Exit App?",
+			"msg": "Do you want to exit the application?",
+			"yes": "Yes",
+			"no": "No"
+		},
+		"recordpermissions": {
+			"title": "You have to allow recording audio",
+			"msg": "Go to settings and allow Echo App recording audio",
+			"close": "Close",
+			"settings": "Settings"
+		}
+	},
+	"payments": {
+		"getmessages": "Get messages",
+		"info_card": {
+			"header": "We help you to help us.",
+			"body": "As you understand we have to keep the project running. So the best way is to help you to help us by finding interessting voice messages from best rated users for you by watching some advertisement, or to buy directly to get 100% out of the algorythm.",
+			"mypercent": "My extra chance: "
+		},
+		"card_share": {
+			"title": "+50% CHANCE",
+			"subtitle": "after sharing on social network",
+			"cardtitle": "Messages from best rated users",
+			"cardsubtitle": "+50% chance to get messages from best rated users after sharing in a network. The percentage of different advertisements are adding each other and increases the chances to get very interesting messages.",
+			"costsmsg": "Total Payment",
+			"showad": "Share"
+		},
+		"card_10": {
+			"title": "+20% CHANCE",
+			"subtitle": "after enabled banner advertisement",
+			"cardtitle": "Messages from best rated users",
+			"cardsubtitle": "+20% chance to get messages from best rated users while running advertisement. The percentage of different advertisements are adding each other and increases the chances to get very interesting messages.",
+			"costsmsg": "Total Payment",
+			"showad": "Show Banner"
+		},
+		"card_15": {
+			"title": "+25% CHANCE",
+			"subtitle": "after show full screen advertisement once",
+			"cardtitle": "Messages from best rated users",
+			"cardsubtitle": "+25% chance to get messages from best rated users while running advertisement. The percentage of different advertisements are adding each other and increases the chances to get very interesting messages.",
+			"costsmsg": "Total Payment",
+			"showad": "Show advertisement"
+		},
+		"card_20": {
+			"title": "+30% CHANCE",
+			"subtitle": "after show video advertisement once",
+			"cardtitle": "Messages from best rated users",
+			"cardsubtitle": "+30% chance to get messages from best rated users while running advertisement. The percentage of different advertisements are adding each other and increases the chances to get very interesting messages.",
+			"costsmsg": "Total Payment",
+			"showad": "Show advertisement"
+		},
+		"card_msg_1": {
+			"title": "1 MESSAGE",
+            "subtitle": "after small payment",
+            "cardtitle": "Messages from best rated users",
+            "cardsubtitle": "Get messages from best rated users.",
+            "costsmsg": "Total Payment"
+		},
+		"card_msg_5": {
+			"title": "5 MESSAGES",
+            "subtitle": "after almost small payment",
+            "cardtitle": "Messages from best rated users",
+            "cardsubtitle": "Get messages from best rated users.",
+            "costsmsg": "Total Payment"
+		},
+		"card_msg_15": {
+			"title": "15 MESSAGES",
+            "subtitle": "after not so small payment",
+            "cardtitle": "Messages from best rated users",
+            "cardsubtitle": "Get messages from best rated users.",
+            "costsmsg": "Total Payment"
+		},
+		"card_msg_30": {
+			"title": "30 MESSAGES",
+            "subtitle": "after a litl more than small payment",
+            "cardtitle": "Messages from best rated users",
+            "cardsubtitle": "Get messages from best rated users.",
+            "costsmsg": "Total Payment"
+		},
+		"card_msg_inf": {
+			"title": "ONLY THE BEST",
+            "subtitle": "after not sooo small payment.. :)",
+            "cardtitle": "Get only messages from best rated users",
+            "cardsubtitle": "Get only messages from best rated users",
+            "costsmsg": "Total Payment"
+		}
+	},
+	"selects": {
+		"gender": {
+			"label": "Gender",
+			"placeholder": "Select gender",
+			"male": "Male",
+			"female": "Female"
+		},
+		"birthday": {
+			"label": "Birthday",
+			"placeholder": "Select birthday",
+			"day": "Day",
+			"month": "Month",
+			"year": "Year"
+		},
+		"language": {
+			"label": "Language of communication",
+			"placeholder": "Select language"
+		},
+		"country": {
+			"label": "Country of communication",
+			"placeholder": "Select country"
+		},
+		"region": {
+			"label": "Region of communication",
+			"placeholder": "Select region"
+		},
+		"city": {
+			"label": "City of communication",
+			"placeholder": "Select city"
+		},
+		"applanguage": {
+			"label": "App language",
+			"placeholder": "Select app language"
+		}
+	},
+	"inputs": {
+		"phonenumber": {
+			"label": "Phonenumber/Email"
+		},
+		"password": {
+			"label": "Password"
+		},
+		"email": {
+			"label": "Email"
+		},
+		"phone": {
+			"label": "Phonenumber"
+		},
+		"passwordconfirm": {
+			"label": "Password confirm"
+		}
+	},
+	"department": {
+		"appsettings": "App settings",
+		"migration": "Login (relevant for recovering)",
+		"personal": "Personal data (relevant for partner search)"
+	},
+	"button": {
+		"close": "Close",
+		"send": "Send",
+		"play": "Play",
+		"ok": "Ок",
+		"save": "Save",
+		"login": "Login",
+		"registration": "Anonymous Registration"
+	},
+	"messages": {
+		"uploading": "Uploading...",
+		"recording": "Recording...",
+		"notavailable": "Not available",
+		"networktimeout": "Bad connection. Please refresh.",
+		"networkerror": "Lack of internet connection",
+		"loginerror": "User-password combination not found",
+		"reginerror": "Connection problem",
+		"servererror": "Server error",
+		"settingsnotsave": "Could not be saved",
+		"settingsplace": "Country, Region and City must be set!",
+		"settingspwd": "Passwords do not match",
+		"settingsphonemail": "Set email or phone to save password",
+		"saved": "Saved"
+	},
+	"attributes": {
+		"searching": "Searching random message",
+		"sec": "sec",
+		"loaddata": "Loading more data...",
+		"novalidemail": "Not valid email!",
+		"notequalpwd": "Passwords not equal!",
+		"pushthebutton": "Tap record button and say something.."
+	},
+	"sharing": {
+		"subject": "Download Echo App",
+		"msg": "Download this awesome app and use my promocode: ",
+		"promotitle": "Get the Echo App now",
+		"promotext": "and get a bonus using the following promotional code:",
+		"getbonus": "And get a bonus",
+		"promocode": "Promotional code"
+	},
+	"LANGUAGES": {
+		"EN": "English",
+		"RU": "Русский",
+		"DE": "Deutsch",
+		"TITLE": "Choose language"
+	}
+}

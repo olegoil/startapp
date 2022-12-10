@@ -87,7 +87,7 @@ android/
 ## ADD BASE PLUGINS
 ### 1. INSTALL PLUGINS
 ```
-npm install cordova-plugin-vibration && npm install @awesome-cordova-plugins/vibration && npm install cordova-plugin-splashscreen && npm install @awesome-cordova-plugins/splash-screen && npm install cordova-plugin-nativestorage && npm install @awesome-cordova-plugins/native-storage && npm install cordova-plugin-statusbar && npm install @awesome-cordova-plugins/status-bar && npm install @capacitor/splash-screen && npm install cordova-plugin-actionsheet && npm install @awesome-cordova-plugins/action-sheet && npm install cordova-plugin-android-permissions && npm install @awesome-cordova-plugins/android-permissions && npm install cordova-plugin-camera && npm install @awesome-cordova-plugins/camera && npm install cordova-plugin-device && npm install @awesome-cordova-plugins/device && npm install cordova-plugin-file && npm install @awesome-cordova-plugins/file && npm install cordova-plugin-file-transfer && npm install @awesome-cordova-plugins/file-transfer && npm install cordova-plugin-globalization && npm install @awesome-cordova-plugins/globalization && npm install cordova-plugin-insomnia && npm install @awesome-cordova-plugins/insomnia && npm install cordova-plugin-network-information && npm install @awesome-cordova-plugins/network && npm install cordova-plugin-x-socialsharing && npm install @awesome-cordova-plugins/social-sharing && npm install cordova-plugin-x-toast && npm install @awesome-cordova-plugins/toast && npm install cordova-sqlite-storage && npm install @awesome-cordova-plugins/sqlite && npm install @ngx-translate/core @ngx-translate/http-loader --save && npm install cordova-plugin-geolocation && npm install @awesome-cordova-plugins/geolocation && npm install cordova-plugin-telerik-imagepicker && npm install @awesome-cordova-plugins/image-picker && npm install @capacitor-community/http && npm install @capacitor/push-notifications && npm install cordova.plugins.diagnostic && npm install @awesome-cordova-plugins/diagnostic && npm i @fontawesome/angular-fontawesome && npm i @fortawesome/fontawesome-svg-core && npm i @fortawesome/free-solid-svg-icons && npm i @fortawesome/free-regular-svg-icons && npm i @fortawesome/free-brands-svg-icons && npx cap update && ionic cap sync && npm install jetifier && npx jetify
+npm install cordova-plugin-vibration && npm install @awesome-cordova-plugins/vibration && npm install cordova-plugin-splashscreen && npm install @awesome-cordova-plugins/splash-screen && npm install cordova-plugin-nativestorage && npm install @awesome-cordova-plugins/native-storage && npm install cordova-plugin-statusbar && npm install @awesome-cordova-plugins/status-bar && npm install @capacitor/splash-screen && npm install cordova-plugin-actionsheet && npm install @awesome-cordova-plugins/action-sheet && npm install cordova-plugin-android-permissions && npm install @awesome-cordova-plugins/android-permissions && npm install cordova-plugin-camera && npm install @awesome-cordova-plugins/camera && npm install cordova-plugin-device && npm install @awesome-cordova-plugins/device && npm install cordova-plugin-file && npm install @awesome-cordova-plugins/file && npm install cordova-plugin-file-transfer && npm install @awesome-cordova-plugins/file-transfer && npm install cordova-plugin-globalization && npm install @awesome-cordova-plugins/globalization && npm install cordova-plugin-insomnia && npm install @awesome-cordova-plugins/insomnia && npm install cordova-plugin-network-information && npm install @awesome-cordova-plugins/network && npm install cordova-plugin-x-socialsharing && npm install @awesome-cordova-plugins/social-sharing && npm install cordova-plugin-x-toast && npm install @awesome-cordova-plugins/toast && npm install cordova-sqlite-storage && npm install @awesome-cordova-plugins/sqlite && npm install @ngx-translate/core @ngx-translate/http-loader --save && npm install cordova-plugin-geolocation && npm install @awesome-cordova-plugins/geolocation && npm install cordova-plugin-telerik-imagepicker && npm install @awesome-cordova-plugins/image-picker && npm install @capacitor-community/http && npm install @capacitor/push-notifications && npm install cordova.plugins.diagnostic && npm install @awesome-cordova-plugins/diagnostic && npm i @fortawesome/angular-fontawesome && npm i @fortawesome/fontawesome-svg-core && npm i @fortawesome/free-solid-svg-icons && npm i @fortawesome/free-regular-svg-icons && npm i @fortawesome/free-brands-svg-icons && npx cap update && ionic cap sync && npm install jetifier && npx jetify
 ```
 ### 2. INTEGRATE PLUGINS IN PROVIDERS AND IMPORTS (INTEGRATE THAT YOU NEED) IN app.modules.ts
 ```
@@ -291,27 +291,114 @@ if (shouldAllowRequest == null) {
 ## TRANSLATION ngx-translate need changes in
 ### 1. MAIN
 ```
+// FOLDER AND FILES
 src/
 └── app/
    └── app.module.ts
+
+// MODULES SETTING
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
+@NgModule({
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule, 
+    IonicModule.forRoot(), 
+    AppRoutingModule,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      }
+    }),
+  ],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
+  bootstrap: [AppComponent],
+})
+export class AppModule {}
 ```
 ### 2. SET TRANSLATION FILES
 ```
+// FOLDER AND FILES
 src/
 └── assets/
     └── i18n/
         ├── ru.json
         └── en.json
+
+// TRANSLATION FILE SETTING (json objects)
+{
+	"appname": "testapp",
+	"pages": {
+		"introvalue": "Intro {{value}}",
+		"intro": "Intro",
+		"login": "Login",
+		"home": "Hauptseite",
+		"message": "Chat",
+		"messages": "Chats",
+		"interesting_messages": "Interessante Chats",
+		"settings": "Einstellungen",
+		"payments": "Mehr interessante Nachrichten"
+	}
+}
 ```
 ### 3. IN EACH MODULE (F.E. TABS)
 ```
+// FOLDER AND FILES
 src/
 └── app/
     └── tab1/
         ├── tab1.page.ts
         └── tabs1.module.ts
+
+// MODULES SETTINGS IN tab1.page.ts
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { environment } from '../../environments/environment';
+
+constructor(
+    private _translate: TranslateService
+) {}
+
+// MODULES SETTINGS IN tabs1.module.ts
+import { MissingTranslationHandler, TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { MissingTranslationService } from '../missing-translation.service';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
+
+@NgModule({
+  imports: [
+    IonicModule,
+    CommonModule,
+    FormsModule,
+    ExploreContainerComponentModule,
+    Tab1PageRoutingModule,
+    HttpClientModule,
+    TranslateModule.forChild({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient],
+      },
+      missingTranslationHandler: { provide: MissingTranslationHandler, useClass: MissingTranslationService },
+      useDefaultLang: false,
+    })
+  ],
+  declarations: [Tab1Page]
+})
+export class Tab1PageModule {}
 ```
-------- assets/i18n/de.json (en.json, ru.json, etc.)
 ### 4. ADD ADDITIONAL FILES IN ROOT
 ```
 src/

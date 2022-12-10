@@ -1,0 +1,306 @@
+{
+	"appname": "Echo",
+	"pages": {
+		"introvalue": "Intro {{value}}",
+		"intro": "Intro",
+		"login": "Login",
+		"home": "Hauptseite",
+		"message": "Chat",
+		"messages": "Chats",
+		"interesting_messages": "Interessante Chats",
+		"settings": "Einstellungen",
+		"payments": "Mehr interessante Nachrichten"
+	},
+	"intro": {
+		"slide1": {
+			"title": "Echo",
+			"subtitle": "Daten über Echo!",
+			"description": "Der beste Weg, jemanden kennenzulernen, ist der verbale Weg. Die Stimme ist viel wichtiger als das Äußere!"
+		},
+		"slide2": {
+			"title": "Echo",
+			"subtitle": "Etwas Großartiges!",
+			"list": {
+				"0": "Drücke die Aufnahmetaste",
+				"1": "Sag etwas wie: \"Hallo, mein Name ist...\"",
+				"2": "Die Nachricht wird an zufällige Benutzer mit dem anderen Geschlecht gesendet",
+				"3": "Erhalte eine Nachricht von einem zufälligen Absender mit gegenteiligen Geschlecht",
+				"4": "Beginne mit Stimmenaustausch und treffe dich!"
+			}
+		},
+		"slide3": {
+			"title": "Echo",
+			"subtitle": "Von dir benötigte Daten:",
+			"list": {
+				"0": "Dein Geschlecht",
+				"1": "Dein Alter",
+				"2": "Bevorzugte Sprache und Ort"
+			}
+		},
+		"slide4": {
+			"title": "Dein Geschlecht",
+			"subtitle": "Wähle dein Geschlecht",
+			"description": "Um den richtigen Partner mit dem anderen Geschlecht zu finden."
+		},
+		"slide5": {
+			"title": "Dein Geburtstag",
+			"subtitle": "Gib deinen Geburtstag ein",
+			"description": "Um den besten Gesprächspartner zu finden (weder zu jung noch zu alt)."
+		},
+		"slide6": {
+			"title": "Ihre Sprache und Ihr Ort",
+			"subtitle": "Wähle deine Sprache und deinen Ort aus",
+			"description": "Um einen Partner mit derselben Sprache in deiner Nähe zu finden."
+		},
+		"slide7": {
+			"title": "Login",
+			"subtitle": "Bist du bereits registriert?",
+			"description": "Wenn Du bereits registriert bist, gib deine Telefonnummer/E-Mail-Adresse und dein Passwort ein. Oder schreibe eine E-Mail an: support@echochatting.me"
+		}
+	},
+	"alerts": {
+		"loginerror": {
+			"title": {
+				"syncherror": "Synchronisationsfehler",
+				"createerror": "Tabellenerstellungsfehler",
+				"codeerror": "Fehlercode 5",
+				"dberror": "Fehler beim Erstellen der Datenbank"
+			},
+			"msg": {
+				"syncherror": "Daten konnten nicht synchronisiert werden",
+				"createerror": "Tabellen konnten nicht erstellt werden",
+				"codeerror": "Unbekannter Fehler",
+				"dberror": "Fehler beim Erstellen der Datenbank"
+			}
+		},
+		"like": {
+			"title": {
+				"interesting": "Zu interessanten Benutzern hinzufügen",
+				"notinteresting": "Von interessanten Benutzern entfernen"
+			},
+			"msg": {
+				"interesting": "Möchten Sie diesen Benutzer zu Ihrer Liste interessanter Personen hinzufügen?",
+				"notinteresting": "Möchten Sie diesen Benutzer aus Ihrer Liste interessanter Personen entfernen?"
+			},
+			"handling": {
+				"interesting": "Hinzufügen",
+				"notinteresting": "Entfernen"
+			}
+		},
+		"block": {
+			"title": {
+				"block": "Benutzer blockieren?",
+				"unblock": "Nutzer entblockieren?"
+			},
+			"msg": {
+				"block": "Sie möchten keine Nachrichten mehr von diesem Benutzer erhalten?",
+				"unblock": "Sie möchten wieder Nachrichten von diesem Benutzer erhalten?"
+			},
+			"handling": {
+				"block": "Diesen Benutzer sperren",
+				"unblock": "Diesen Benutzer entsperren"
+			}
+		},
+		"nickname": {
+			"title": "Dieser Nikname ist nur für Sie sichtbar und dient Ihnen zur Unterscheidung von Benutzern.",
+			"msg": "Sie möchten diesem Benutzer einen Spitznamen geben?",
+			"handling": "Name setzen",
+			"placeholder": "z.B.: Mein Favorit"
+		},
+		"incoming": {
+			"title": "Eingehende zufällige Nachricht!",
+			"msg": "Gefällt dir diese Nachricht?",
+			"add": "Zu interessant hinzufügen"
+		},
+		"exitapp": {
+			"title": "App schließen?",
+			"msg": "Möchten Sie Echo schließen?",
+			"yes": "Ja",
+			"no": "Nein"
+		},
+		"recordpermissions": {
+			"title": "Sie müssen die Aufnahme von Audio zulassen",
+			"msg": "Gehen Sie zu Einstellungen und erlauben Sie der Echo App Audio aufzunehmen",
+			"close": "Schließen",
+			"settings": "Einstellungen"
+		}
+	},
+	"payments": {
+		"getmessages": "Nachrichten erhalten",
+		"info_card": {
+			"header": "Wir helfen Ihnen, uns zu helfen.",
+			"body": "Wie Sie verstehen, müssen wir das Projekt am Laufen halten. Der beste Weg uns zu helfen ist es interessante Sprachnachrichten, von am besten bewerteten Benutzern, für Sie zu finden. Hier müssen Sie sich lediglich Werbung anschauen um ihre Chancen zu erhöhen, oder direkt Nachrichten kaufen.",
+			"mypercent": "Meine extra Chance: "
+		},
+		"card_share": {
+			"title": "+50% CHANCE",
+			"subtitle": "nach Teilen in sozialen Netzwerken",
+			"cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+			"cardsubtitle": "+50% Chance, Nachrichten von den am besten bewerteten Benutzern zu erhalten, nach Teilen in einem Netzwerk. Der Prozentsatz verschiedener Anzeigen addiert sich und erhöht die Chancen sehr interessante Nachrichten zu erhalten.",
+			"costsmsg": "Gesamtzahlung",
+			"showad": "Teilen"
+		},
+		"card_10": {
+			"title": "+20% CHANCE",
+			"subtitle": "nach aktivierter Bannerwerbung",
+			"cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+			"cardsubtitle": "+20% Chance, Nachrichten von den am besten bewerteten Benutzern zu erhalten, während die Werbung läuft. Der Prozentsatz verschiedener Anzeigen addiert sich und erhöht die Chancen sehr interessante Nachrichten zu erhalten.",
+			"costsmsg": "Gesamtzahlung",
+			"showad": "Banner anzeigen"
+		},
+		"card_15": {
+			"title": "+25% CHANCE",
+			"subtitle": "nach einmal Vollbild-Werbung anzeigen",
+			"cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+			"cardsubtitle": "+25% Chance, Nachrichten von den am besten bewerteten Benutzern zu erhalten, nach dem die Werbung gelaufen ist. Der Prozentsatz verschiedener Anzeigen addiert sich und erhöht die Chancen, sehr interessante Nachrichten zu erhalten.",
+			"costsmsg": "Gesamtzahlung Payment",
+			"showad": "Werbung anzeigen"
+		},
+		"card_20": {
+			"title": "+30% CHANCE",
+			"subtitle": "nach Videowerbung einmal zeigen",
+			"cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+			"cardsubtitle": "+30% Chance, Nachrichten von den am besten bewerteten Benutzern zu erhalten, nach dem die Werbung gelaufen ist. Der Prozentsatz verschiedener Anzeigen addiert sich und erhöht die Chancen, sehr interessante Nachrichten zu erhalten.",
+			"costsmsg": "Gesamtzahlung Payment",
+			"showad": "Werbung anzeigen"
+		},
+		"card_msg_1": {
+			"title": "1 NACHRICHT",
+            "subtitle": "nach kleiner zahlung",
+            "cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+            "cardsubtitle": "Erhalten Sie Nachrichten von den am besten bewerteten Benutzern.",
+            "costsmsg": "Gesamtzahlung Payment"
+		},
+		"card_msg_5": {
+			"title": "5 NACHRICHTEN",
+            "subtitle": "nach fast kleiner zahlung",
+            "cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+            "cardsubtitle": "Erhalten Sie Nachrichten von den am besten bewerteten Benutzern.",
+            "costsmsg": "Gesamtzahlung Payment"
+		},
+		"card_msg_15": {
+			"title": "15 NACHRICHTEN",
+            "subtitle": "nach nicht so kleiner zahlung",
+            "cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+            "cardsubtitle": "Erhalten Sie Nachrichten von den am besten bewerteten Benutzern.",
+            "costsmsg": "Gesamtzahlung Payment"
+		},
+		"card_msg_30": {
+			"title": "30 NACHRICHTEN",
+            "subtitle": "nach etwas mehr als kleiner zahlung",
+            "cardtitle": "Nachrichten von den am besten bewerteten Benutzern",
+            "cardsubtitle": "Erhalten Sie Nachrichten von den am besten bewerteten Benutzern.",
+            "costsmsg": "Gesamtzahlung Payment"
+		},
+		"card_msg_inf": {
+			"title": "NUR DIE BESTEN",
+            "subtitle": "nach nicht sooo kleiner zahlung.. :)",
+            "cardtitle": "Erhalten Sie nur Nachrichten von den am besten bewerteten Benutzern",
+            "cardsubtitle": "Erhalten Sie nur Nachrichten von den am besten bewerteten Benutzern",
+            "costsmsg": "sGesamtzahlung Payment"
+		}
+	},
+	"selects": {
+		"gender": {
+			"label": "Geschlecht",
+			"placeholder": "Wähle Geschlecht",
+			"male": "Männlich",
+			"female": "Weiblich"
+		},
+		"birthday": {
+			"label": "Geburtstag",
+			"placeholder": "Geburtstag auswählen",
+			"day": "Tag",
+			"month": "Monat",
+			"year": "Jahr"
+		},
+		"language": {
+			"label": "Sprache der Kommunikation",
+			"placeholder": "Sprache auswählen"
+		},
+		"country": {
+			"label": "Land der Kommunikation",
+			"placeholder": "Land auswählen"
+		},
+		"region": {
+			"label": "Region der Kommunikation",
+			"placeholder": "Region wählen"
+		},
+		"city": {
+			"label": "Stadt der Kommunikation",
+			"placeholder": "Stadt wählen"
+		},
+		"applanguage": {
+			"label": "App Sprache",
+			"placeholder": "App Sprache auswählen"
+		}
+	},
+	"inputs": {
+		"phonenumber": {
+			"label": "Telefonnummer/E-Mail"
+		},
+		"password": {
+			"label": "Passwort"
+		},
+		"email": {
+			"label": "Email"
+		},
+		"phone": {
+			"label": "Telefonnummer"
+		},
+		"passwordconfirm": {
+			"label": "Passwortbestätigung"
+		}
+	},
+	"department": {
+		"appsettings": "App Einstellungen",
+		"migration": "Login (relevant für Wiederherstellung)",
+		"personal": "Personenbezogene Daten (relevant für Partnersuche)"
+	},
+	"button": {
+		"close": "Schließen",
+		"send": "Senden",
+		"play": "Abspielen",
+		"ok": "Ок",
+		"save": "Speichern",
+		"login": "Anmeldung",
+		"registration": "Anonyme Registrierung"
+	},
+	"messages": {
+		"uploading": "Hochladen...",
+		"recording": "Aufzeichnung...",
+		"notavailable": "Noch nicht verfügbar",
+		"networktimeout": "Schlechte Verbindung. Bitte aktualisieren.",
+		"networkerror": "Fehlende Internetverbindung",
+		"loginerror": "Benutzer-Password Kombination nicht gefunden",
+		"reginerror": "Verbindungsprobleme",
+		"servererror": "Serverfehler",
+		"settingsnotsave": "Konnte nicht gespeichert werden",
+		"settingsplace": "Land, Region and Stadt muss gegeben sein!",
+		"settingspwd": "Paswörter stimmen nicht überein",
+		"settingsphonemail": "Email oder Telefon angeben, um das Passwort zu speichern",
+		"saved": "Gespeichert"
+	},
+	"attributes": {
+		"searching": "Suche zufällige Nachricht",
+		"sec": "sek",
+		"loaddata": "Daten werden geladen...",
+		"novalidemail": "Email ist nicht valide!",
+		"notequalpwd": "Passwörter stimmen nicht überein!",
+		"pushthebutton": "Aufnahmetaste drücken und etwas sagen .."
+	},
+	"sharing": {
+		"subject": "Echo App laden",
+		"msg": "Lade diese tolle App herunter und verwende meinen Promocode: ",
+		"promotitle": "Lade dir die App Echo runter",
+		"promotext": "und erhalte Geschenke mit folgendem Code:",
+		"getbonus": "und erhalte Geschenke",
+		"promocode": "Promocode"
+	},
+	"LANGUAGES": {
+		"EN": "English",
+		"RU": "Русский",
+		"DE": "Deutsch",
+		"TITLE": "Sprache wählen"
+	}
+}

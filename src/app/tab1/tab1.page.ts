@@ -10,7 +10,7 @@ import { environment } from '../../environments/environment';
 export class Tab1Page {
 
   constructor(
-    rivate _translate: TranslateService,
+    private _translate: TranslateService,
   ) {}
 
 }
