@@ -8,6 +8,22 @@
 ### XCODE
 [Xcode](https://developer.apple.com/xcode/)
 #### 1. INSTALL EMULATORS
+### GIT
+### 1. INSTALL GIT
+### 2. CONFIGURE GIT
+```
+git config --global user.name `testuser` && git config --local user.email `testuser@gmail.com`
+```
+### 3. GENERATE SSH KEY (left empty password and passphrase)
+```
+ssh-keygen -t ed25519 -C `"testuser@gmail.com"`
+```
+### 4. COPY GENERATED SSH KEY
+```
+pbcopy < ~/.ssh/id_rsa.pub
+```
+### 5. PASTE KEY TO GITHUB
+
 ## SET zshrc profile
 ### 1. OPEN TERMINAL
 ### 2. INSTALL NODEJS USING NVM
@@ -43,6 +59,11 @@ npm i -g @ionic/cli
 ## IONIC START PROJECT
 ```
 ionic start `testapp` tabs --capacitor --type=angular --project-id=`testapp` --package-id=`com.olegtronics.testapp` && cd `testapp`
+```
+
+## ADD GIT TO PROJECT
+```
+cd testapp && git init && git add * && git commit -m "first comment" && git remote add origin `git@github.com:olegoil/startapp.git` && git push -u master
 ```
 
 ## IONIC START APP IN BROWSER
