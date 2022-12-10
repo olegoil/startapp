@@ -9,7 +9,8 @@
 [Xcode](https://developer.apple.com/xcode/)
 #### 1. INSTALL EMULATORS
 ### GIT
-### 1. INSTALL GIT
+### 1. INSTALL GIT (MAC)
+[GIT](https://git-scm.com/download/mac)
 ### 2. CONFIGURE GIT
 ```
 git config --global user.name `testuser` && git config --local user.email `testuser@gmail.com`
