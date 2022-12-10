@@ -7,6 +7,9 @@ import { ExploreContainerComponentModule } from '../explore-container/explore-co
 
 import { Tab1PageRoutingModule } from './tab1-routing.module';
 
+import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
+import { environment } from '../../environments/environment';
+
 @NgModule({
   imports: [
     IonicModule,

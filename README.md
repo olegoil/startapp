@@ -42,7 +42,7 @@ npm i -g @ionic/cli
 
 ## IONIC START PROJECT
 ```
-ionic start testapp tabs --capacitor --type=angular --project-id=testapp --package-id=com.olegtronics.testapp && cd testapp
+ionic start `testapp` tabs --capacitor --type=angular --project-id=`testapp` --package-id=`com.olegtronics.testapp` && cd `testapp`
 ```
 
 ## IONIC START APP IN BROWSER
