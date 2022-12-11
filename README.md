@@ -447,3 +447,13 @@ ionic cordova build ios --prod --release --optimizejs --minifycss --minifyjs --v
 ```
 ionic cordova build android --prod --release --optimizejs --minifycss --minifyjs --verbose
 ```
+
+## IONIC (ANGULAR)
+### 1. GENERATE PAGE
+```
+ionic generate page `pagename`
+```
+### 2. GENERATE SERVICE
+```
+ionic generate service `servicename`
+```
