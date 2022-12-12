@@ -21,7 +21,7 @@ ssh-keygen -t ed25519 -C `"testuser@gmail.com"`
 ```
 ### 4. COPY GENERATED SSH KEY
 ```
-pbcopy < ~/.ssh/id_rsa.pub
+pbcopy < ~/.ssh/id_ed25519.pub
 ```
 ### 5. PASTE KEY TO GITHUB
 
@@ -289,7 +289,11 @@ if (shouldAllowRequest == null) {
 ```
 
 ## TRANSLATION ngx-translate need changes in
-### 1. MAIN
+### 1. INSTALL PLUGIN
+```
+npm install @ngx-translate/core @ngx-translate/http-loader --save
+```
+### 2. MAIN
 ```
 // FOLDER AND FILES
 src/
@@ -325,7 +329,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
 })
 export class AppModule {}
 ```
-### 2. SET TRANSLATION FILES
+### 3. SET TRANSLATION FILES
 ```
 // FOLDER AND FILES
 src/
@@ -350,7 +354,7 @@ src/
 	}
 }
 ```
-### 3. IN EACH MODULE (F.E. TABS)
+### 4. IN EACH MODULE (F.E. TABS)
 ```
 // FOLDER AND FILES
 src/
@@ -399,7 +403,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
 })
 export class Tab1PageModule {}
 ```
-### 4. ADD ADDITIONAL FILES IN ROOT
+### 5. ADD ADDITIONAL FILES IN ROOT
 ```
 src/
 └── app/
@@ -408,7 +412,7 @@ src/
    ├── translation.service.spec.ts
    └── translation.service.ts
 ```
-### 5. MODIFY environment.prod.ts AND environment.ts
+### 6. MODIFY environment.prod.ts AND environment.ts
 ```
 export const environment = {
   production: true,
