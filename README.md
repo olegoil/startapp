@@ -315,6 +315,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
     BrowserModule, 
     IonicModule.forRoot(), 
     AppRoutingModule,
+
+    # COPY START
     HttpClientModule,
     TranslateModule.forRoot({
       loader: {
@@ -323,6 +325,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
         deps: [HttpClient],
       }
     }),
+    # COPY END
+    
   ],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
@@ -388,6 +392,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
     FormsModule,
     ExploreContainerComponentModule,
     Tab1PageRoutingModule,
+    
+    # COPY START
     HttpClientModule,
     TranslateModule.forChild({
       loader: {
@@ -398,6 +404,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
       missingTranslationHandler: { provide: MissingTranslationHandler, useClass: MissingTranslationService },
       useDefaultLang: true,
     })
+    # COPY END
+
   ],
   declarations: [Tab1Page]
 })
