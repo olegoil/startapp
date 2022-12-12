@@ -396,7 +396,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateLoader {
         deps: [HttpClient],
       },
       missingTranslationHandler: { provide: MissingTranslationHandler, useClass: MissingTranslationService },
-      useDefaultLang: false,
+      useDefaultLang: true,
     })
   ],
   declarations: [Tab1Page]
@@ -419,6 +419,12 @@ export const environment = {
   locales: ['en', 'ru', 'de'],
   defaultLocale: 'en',
 };
+```
+### 7. Start with any language you want
+```
+async ngOnInit() {
+  this._translate.use('en');
+}
 ```
 
 ## MODIFY tsconfig.json
